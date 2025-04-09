@@ -12,6 +12,63 @@
         채팅 내용을 바탕으로 한 취향 분석 및 추천 시스템
       </p>
       <img class="project_img" src="./img/graduation project.webp" />
+      <div class="project_detail">
+            <br>
+        <table class="project_table">
+            <tr>
+              <th>작업기간</th>
+              <td>2023년 3월 13일 → 2023년 11월 3일</td>
+            </tr>
+            <tr>
+              <th>작업툴</th>
+              <td>HTML, CSS, Javascript, React, Node.js, Axios, Flask, PyTorch</td>
+            </tr>
+            <tr>
+              <th>작업 인원</th>
+              <td>1명 (개인 프로젝트)</td>
+            </tr>
+            <tr>
+              <th>작품 설명</th>
+              <td>텍스트에 나타난 감정을 분석하여 취향 및 관심사를 추론</td>
+            </tr>
+            <tr>
+              <th>URL</th>
+              <td><a href="https://github.com/suooo/2023_Graduation_Project.git" target="_blank">https://github.com/suooo/2023_Graduation_Project.git</a></td>
+            </tr>
+          </table>
+          
+          <br><br>
+
+          <h2>📌 Contents</h2>
+          <p >
+              가장 대중적인 모바일 메신저 앱인 카카오톡의 대화 내용을 바탕으로 텍스트에
+              나타난 감정을 분석하여 상대의 취향 및 관심사를 추론하는 웹 사이트 형식의
+              시스템입니다.
+              취향 및 관심사 추론에는 자연어 처리(NLP)의 감정 분석 기술을 사용합니다.
+              상대방의 취향에 맞는 선택을 하는 것에 어려움을 겪고 스트레스 받는 사람들의
+              고민을 줄여주는 것을 목표로 했습니다.<br><br><br>
+        
+              <h2>📋 System Configuration</h2>
+               <b>React & Axios</b> <br> React는 프론트엔드 개발에 사용한,
+              자바스크립트 라이브러리이다. Axios를 통해 백엔드 서버와 통신하였다. <br /><br>
+               <b>Flask</b> <br> Flask는 백엔드 서버 구축에 사용한, 파이썬으로 작성된 웹
+              프레임워크다. React에서 받아온 데이터로 서버에서 언어 모델을 거친 후
+              예측값을 다시 돌려준다. <br /><br>
+               <b>PyTorch</b> <br> PyTorch는 파이썬을 위한 오픈소스 머신 러닝 라이브러리로, 언어
+              모델을 Flask 서버에서 불러올 때 필요하다. <br /><br>
+               <b>Language Model</b> <br> 한국어 기반 언어 모델 KoBERT을 통해 대화 내용의 감정을
+              분석했다. Colab에서 사전 학습한 언어모델을 서버에 불러와 사용했다. 대화
+              내용을 입력하면 각 문장에서 느껴지는 감정을 추론 및 분류한다.<br /><br>
+
+              <h2>🖥️ Result & Conclusion</h2>
+              카카오톡 대화 내용을 업로드하면 대화 내용 형식이 언어 모델 입력에 알맞게 변환된다. 형식 변환된 대화 내용은 서버로 보낸다.<br>
+              서버는 받아온 대화 내용을 언어 모델에 입력, 감정을 분석한다. 긍정적인 감정을 띠는 대화 내용과 각 대화별 키워드를 추출한다.<br>
+              긍정 감정 대화와 키워드 목록을 클라이언트에 전송하면, 대화 목록과 키워드별 추천 검색을 사용자 화면에 자동으로 렌더링한다.<br>
+              KoBERT를 통한 감정 분석 기술을 사용해 긍정 감정 대화만 추출할 수 있었고 이를 토대로 한 추천 검색까지, 구상 시 계획했던 기능을 모두 구현 완료했다. <br>
+              비록 정확도와 속도 면에서는 아쉬움을 보이지만, 카테고리 별 추천이 아니라 개인 맞춤 추천 시스템을 만들었다는 점에 의의를 두고 싶다. 
+              <br><br>
+          </p>
+      </div>
     </div>
   </body>
 </html>
